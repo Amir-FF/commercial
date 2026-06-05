@@ -1,0 +1,141 @@
+header {
+    width: 100%;
+    background-color: #001659;
+    color: #eee;
+    text-transform: capitalize;
+    padding: 15px 18px;
+    font-size: 15px;
+    font-weight: bold;
+}
+ 
+header #logo {
+    gap: 2px;
+}
+
+header .container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+header #fixed-menu a {
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s;
+}
+
+header #fixed-menu a:hover, header #fixed-menu a.activated {
+    color: #ff5e14;
+}
+
+
+header #fixed-menu a:focus {
+    border: 1px solid #eee;
+}
+
+header #fixed-menu a.activated:focus {
+    border: 1px solid #ff5e14 !important;
+}
+
+header #fixed-menu a:focus:hover {
+    color: #ff5e14;
+    border: 1px solid #ff5e14;
+}
+
+header form {
+    border: 1px solid #eee;
+}
+
+header form button {
+    width: 100%;
+    height: 100%;
+    padding: 5px 0;
+    background-color: #ff5e14;
+    color: #eee;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+header form button:hover {
+    background-color: #ff5e14cc;
+}
+
+header form button svg {
+    transform: translateY(2px);
+}
+
+header input {
+    background-color: #001659;
+    -webkit-text-fill-color: #eee;
+    color: #eee;
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 0 15px;
+}
+
+header #dropdown-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: 12;
+
+
+    .container {
+        width: 80%;
+        min-width: 240px;
+        max-width: 440px;
+        height: 100%;
+        background-color: #333;
+    }
+
+    .container a div, .container .word-menu {
+        line-height: 20px;
+        border-bottom: 1px solid #555555;
+    }
+
+    .container .word-menu {
+        padding: 14px 0;
+        font-size: 11px;
+    }
+
+    .container .main-menu a div {
+        padding: 12px 0;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .active {
+        width: 100% !important;
+        border-bottom: 1px solid #fff !important;
+    }
+
+    .background-color-33333380 {
+        background-color: #33333380;
+    }
+}
+
+header #dropdown-menu-icon {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 991px) {
+    header #fixed-menu {
+        display: none !important;
+    }
+
+    header #dropdown-menu-icon {
+        display: block !important;
+    }
+}
+
+@media screen and (max-width: 776px) {
+    header #search {
+        display: none !important;
+    }
+}
